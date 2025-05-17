@@ -1,0 +1,91 @@
+$date
+	Sat May 17 16:49:00 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module non_blocking_test $end
+$var wire 4 ! d [3:0] $end
+$var wire 4 " c [3:0] $end
+$var wire 4 # b [3:0] $end
+$var reg 1 $ a $end
+$var reg 1 % clk $end
+$scope module u_non_blocking $end
+$var wire 1 $ a $end
+$var wire 1 % clk $end
+$var reg 4 & b [3:0] $end
+$var reg 4 ' c [3:0] $end
+$var reg 4 ( d [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+0%
+0$
+bx #
+bx "
+bx !
+$end
+#10000
+b0 #
+b0 &
+1%
+#20000
+0%
+#25000
+1$
+#30000
+b0 "
+b0 '
+b1 #
+b1 &
+1%
+#40000
+0%
+#45000
+0$
+#50000
+b0 !
+b0 (
+b1 "
+b1 '
+b0 #
+b0 &
+1%
+#60000
+0%
+#65000
+1$
+#70000
+b1 !
+b1 (
+b0 "
+b0 '
+b1 #
+b1 &
+1%
+#80000
+0%
+#85000
+0$
+#90000
+b0 !
+b0 (
+b1 "
+b1 '
+b0 #
+b0 &
+1%
+#100000
+0%
+#105000
