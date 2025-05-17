@@ -1,0 +1,46 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2009.vpi";
+S_0x11c705fa0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x11c7045a0 .scope module, "signed_to_unsigned_table" "signed_to_unsigned_table" 3 30;
+ .timescale 0 0;
+v0x11c704710_0 .var/i "i", 31 0;
+v0x11c718c40_0 .var/s "signed_val", 15 0;
+v0x11c718ce0_0 .var "unsigned_val", 15 0;
+    .scope S_0x11c7045a0;
+T_0 ;
+    %vpi_call/w 3 37 "$display", "\350\262\240\346\225\270\345\200\274\01116-bit \344\272\214\350\243\234\346\225\270\011\011Unsigned \350\247\243\350\256\200" {0 0 0};
+    %pushi/vec4 4294967295, 0, 32;
+    %store/vec4 v0x11c704710_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x11c704710_0;
+    %cmpi/s 4294967284, 0, 32;
+    %flag_inv 5; GE is !LT
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x11c704710_0;
+    %pad/s 16;
+    %store/vec4 v0x11c718c40_0, 0, 16;
+    %load/vec4 v0x11c718c40_0;
+    %store/vec4 v0x11c718ce0_0, 0, 16;
+    %vpi_call/w 3 44 "$display", "%0d\011%b\011%0d", v0x11c718c40_0, v0x11c718c40_0, v0x11c718ce0_0 {0 0 0};
+    %load/vec4 v0x11c704710_0;
+    %subi 1, 0, 32;
+    %store/vec4 v0x11c704710_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "/Users/wr80340/WorkSpace/verilog/example3.v";

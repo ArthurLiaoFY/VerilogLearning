@@ -1,0 +1,641 @@
+{
+  "creator": "Yosys 0.48 (git sha1 aaa5347494801e9e3870b31387da59da24233f76, clang++ 18.1.2-wasi-sdk -O3)",
+  "modules": {
+    "logic_test": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "{workspace}/example4.v:1.1-40.10"
+      },
+      "ports": {
+      },
+      "cells": {
+        "$display${workspace}/example4.v:13$2": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "{4:> 2d-u}\n",
+            "PRIORITY": "11111111111111111111111111111111",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:13.9-13.21"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0", "1", "1", "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:14$3": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "{4:> 2d-u}\n",
+            "PRIORITY": "11111111111111111111111111111110",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:14.9-14.21"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0", "0", "0", "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:15$4": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "{4:> 2d-u}\n",
+            "PRIORITY": "11111111111111111111111111111101",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:15.9-15.21"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "x", "x", "x", "x" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:22$8": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000001",
+            "FORMAT": "!a  = {1:>01b-u}\n",
+            "PRIORITY": "11111111111111111111111111111001",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:22.9-22.34"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:23$10": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "a | c  = {4:>04b-u}\n",
+            "PRIORITY": "11111111111111111111111111111000",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:23.9-23.38"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "x", "1", "1", "x" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:24$12": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000001",
+            "FORMAT": "a || c  = {1:>01b-u}\n",
+            "PRIORITY": "11111111111111111111111111110111",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:24.9-24.40"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "1" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:25$14": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "a & c  = {4:>04b-u}\n",
+            "PRIORITY": "11111111111111111111111111110110",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:25.9-25.40"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0", "x", "x", "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:26$16": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000001",
+            "FORMAT": "a && c = {1:>01b-u}\n",
+            "PRIORITY": "11111111111111111111111111110101",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:26.9-26.41"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "x" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:28$18": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000001",
+            "FORMAT": "!b  = {1:>01b-u}\n",
+            "PRIORITY": "11111111111111111111111111110100",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:28.9-28.34"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "1" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:29$20": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "a | b  = {4:>04b-u}\n",
+            "PRIORITY": "11111111111111111111111111110011",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:29.9-29.40"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0", "1", "1", "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:30$22": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000001",
+            "FORMAT": "a || b  = {1:>01b-u}\n",
+            "PRIORITY": "11111111111111111111111111110010",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:30.9-30.42"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "1" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:31$24": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "a & b  = {4:>04b-u}\n",
+            "PRIORITY": "11111111111111111111111111110001",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:31.9-31.40"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0", "0", "0", "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$display${workspace}/example4.v:32$26": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000001",
+            "FORMAT": "a && b  = {1:>01b-u}\n",
+            "PRIORITY": "11111111111111111111111111110000",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:32.9-32.42"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$displayb${workspace}/example4.v:18$5": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "{4:>04b-u}\n",
+            "PRIORITY": "11111111111111111111111111111100",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:18.9-18.22"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0", "1", "1", "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$displayb${workspace}/example4.v:19$6": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "{4:>04b-u}\n",
+            "PRIORITY": "11111111111111111111111111111011",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:19.9-19.22"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "0", "0", "0", "0" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        },
+        "$displayb${workspace}/example4.v:20$7": {
+          "hide_name": 1,
+          "type": "$print",
+          "parameters": {
+            "ARGS_WIDTH": "00000000000000000000000000000100",
+            "FORMAT": "{4:>04b-u}\n",
+            "PRIORITY": "11111111111111111111111111111010",
+            "TRG_ENABLE": "00000000000000000000000000000001",
+            "TRG_POLARITY": "",
+            "TRG_WIDTH": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "src": "{workspace}/example4.v:20.9-20.22"
+          },
+          "port_directions": {
+            "ARGS": "input",
+            "EN": "input",
+            "TRG": "input"
+          },
+          "connections": {
+            "ARGS": [ "x", "x", "x", "x" ],
+            "EN": [ "1" ],
+            "TRG": [ ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\a[3:0]": {
+          "hide_name": 1,
+          "bits": [ "0", "1", "1", "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:0.0-0.0"
+          }
+        },
+        "$0\\b[3:0]": {
+          "hide_name": 1,
+          "bits": [ "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:0.0-0.0"
+          }
+        },
+        "$0\\c[3:0]": {
+          "hide_name": 1,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:0.0-0.0"
+          }
+        },
+        "$and${workspace}/example4.v:25$15_Y": {
+          "hide_name": 1,
+          "bits": [ "0", "x", "x", "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:25.33-25.38"
+          }
+        },
+        "$and${workspace}/example4.v:31$25_Y": {
+          "hide_name": 1,
+          "bits": [ "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:31.33-31.38"
+          }
+        },
+        "$display${workspace}/example4.v:13$2_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:13.9-13.21"
+          }
+        },
+        "$display${workspace}/example4.v:14$3_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:14.9-14.21"
+          }
+        },
+        "$display${workspace}/example4.v:15$4_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:15.9-15.21"
+          }
+        },
+        "$display${workspace}/example4.v:22$8_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:22.9-22.34"
+          }
+        },
+        "$display${workspace}/example4.v:23$10_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:23.9-23.38"
+          }
+        },
+        "$display${workspace}/example4.v:24$12_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:24.9-24.40"
+          }
+        },
+        "$display${workspace}/example4.v:25$14_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:25.9-25.40"
+          }
+        },
+        "$display${workspace}/example4.v:26$16_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:26.9-26.41"
+          }
+        },
+        "$display${workspace}/example4.v:28$18_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:28.9-28.34"
+          }
+        },
+        "$display${workspace}/example4.v:29$20_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:29.9-29.40"
+          }
+        },
+        "$display${workspace}/example4.v:30$22_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:30.9-30.42"
+          }
+        },
+        "$display${workspace}/example4.v:31$24_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:31.9-31.40"
+          }
+        },
+        "$display${workspace}/example4.v:32$26_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:32.9-32.42"
+          }
+        },
+        "$displayb${workspace}/example4.v:18$5_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:18.9-18.22"
+          }
+        },
+        "$displayb${workspace}/example4.v:19$6_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:19.9-19.22"
+          }
+        },
+        "$displayb${workspace}/example4.v:20$7_EN": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:20.9-20.22"
+          }
+        },
+        "$logic_and${workspace}/example4.v:26$17_Y": {
+          "hide_name": 1,
+          "bits": [ "x" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:26.33-26.39"
+          }
+        },
+        "$logic_and${workspace}/example4.v:32$27_Y": {
+          "hide_name": 1,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:32.34-32.40"
+          }
+        },
+        "$logic_not${workspace}/example4.v:22$9_Y": {
+          "hide_name": 1,
+          "bits": [ "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:22.30-22.32"
+          }
+        },
+        "$logic_not${workspace}/example4.v:28$19_Y": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:28.30-28.32"
+          }
+        },
+        "$logic_or${workspace}/example4.v:24$13_Y": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:24.34-24.38"
+          }
+        },
+        "$logic_or${workspace}/example4.v:30$23_Y": {
+          "hide_name": 1,
+          "bits": [ "1" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:30.34-30.40"
+          }
+        },
+        "$or${workspace}/example4.v:23$11_Y": {
+          "hide_name": 1,
+          "bits": [ "x", "1", "1", "x" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:23.33-23.36"
+          }
+        },
+        "$or${workspace}/example4.v:29$21_Y": {
+          "hide_name": 1,
+          "bits": [ "0", "1", "1", "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:29.33-29.38"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ "0", "1", "1", "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:2.14-2.15"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:2.16-2.17"
+          }
+        },
+        "c": {
+          "hide_name": 0,
+          "bits": [ "x", "x", "x", "x" ],
+          "attributes": {
+            "src": "{workspace}/example4.v:2.18-2.19"
+          }
+        }
+      }
+    }
+  }
+}

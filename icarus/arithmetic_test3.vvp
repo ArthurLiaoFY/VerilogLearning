@@ -1,0 +1,35 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2009.vpi";
+S_0x14ae075e0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x14ae07750 .scope module, "arithmetic_test3" "arithmetic_test3" 3 1;
+ .timescale 0 0;
+v0x14ae078c0_0 .var/i "int_a", 31 0;
+v0x14ae178f0_0 .var "reg_a", 15 0;
+    .scope S_0x14ae07750;
+T_0 ;
+    %pushi/vec4 4294967284, 0, 32;
+    %store/vec4 v0x14ae078c0_0, 0, 32;
+    %load/vec4 v0x14ae078c0_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pad/s 16;
+    %store/vec4 v0x14ae178f0_0, 0, 16;
+    %vpi_call/w 3 8 "$display", v0x14ae078c0_0 {0 0 0};
+    %vpi_call/w 3 9 "$display", v0x14ae178f0_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "/Users/wr80340/WorkSpace/verilog/example3.v";

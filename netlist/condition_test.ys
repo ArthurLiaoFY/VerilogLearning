@@ -1,0 +1,4 @@
+read_verilog -sv -formal -overwrite {workspace}/condition.v
+read_verilog -sv -formal -overwrite {workspace}/condition_test.v
+design -reset-vlog; proc;
+write_json {workspace}/netlist/condition_test.json
