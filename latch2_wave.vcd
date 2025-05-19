@@ -1,0 +1,75 @@
+$date
+	Mon May 19 11:40:38 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module latch2_test $end
+$var wire 2 ! q [1:0] $end
+$var reg 2 " a [1:0] $end
+$var reg 2 # b [1:0] $end
+$var reg 1 $ load $end
+$scope module u_latch2 $end
+$var wire 2 % a [1:0] $end
+$var wire 2 & b [1:0] $end
+$var wire 1 $ load $end
+$var reg 2 ' q [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10 '
+b10 &
+b11 %
+0$
+b10 #
+b11 "
+b10 !
+$end
+#1
+b11 !
+b11 '
+1$
+#2
+b10 !
+b10 '
+0$
+#3
+b11 !
+b11 '
+1$
+#4
+b10 !
+b10 '
+0$
+#5
+b11 !
+b11 '
+1$
+#6
+b10 !
+b10 '
+0$
+#7
+b11 !
+b11 '
+1$
+#8
+b10 !
+b10 '
+0$
+#9
+b11 !
+b11 '
+1$
+#10
+b10 !
+b10 '
+0$

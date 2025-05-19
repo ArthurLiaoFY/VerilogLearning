@@ -1,0 +1,54 @@
+$date
+	Mon May 19 13:45:54 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module code4_2_test $end
+$var wire 2 ! Q [1:0] $end
+$var reg 4 " I [3:0] $end
+$scope module u_code4_2 $end
+$var wire 4 # I [3:0] $end
+$var reg 2 $ Q [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#1
+b11 !
+b11 $
+b1 "
+b1 #
+#2
+b10 !
+b10 $
+b10 "
+b10 #
+#3
+b1 !
+b1 $
+b100 "
+b100 #
+#4
+b0 !
+b0 $
+b1000 "
+b1000 #
+#5
+b11 !
+b11 $
+b1 "
+b1 #
+#6
