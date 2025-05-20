@@ -27,7 +27,7 @@ module multiplier4_for_test; // output declaration of module multiplier4_for
     end
   initial
     begin
-      $dumpfile("multiplier4_for_wave");
+      $dumpfile("multiplier4_for_wave.vcd");
       $dumpvars(0, multiplier4_for_test);
     end
 endmodule

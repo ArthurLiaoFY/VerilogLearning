@@ -1,0 +1,4 @@
+read_verilog -sv -formal -overwrite {workspace}/alu2.v
+read_verilog -sv -formal -overwrite {workspace}/alu2_test.v
+design -reset-vlog; proc;
+write_json {workspace}/netlist/alu2_test.json
