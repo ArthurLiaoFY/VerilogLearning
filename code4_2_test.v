@@ -1,3 +1,4 @@
+`include "code4_2.v"
 module code4_2_test;
   reg[3:0] I;
   // output declaration of module code4_2

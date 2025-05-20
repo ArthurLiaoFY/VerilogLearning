@@ -1,15 +1,15 @@
+`include "multiplier4_for.v"
 module multiplier4_for_test; // output declaration of module multiplier4_for
-  parameter width = 4;
-  reg[width-1:0] a, b;
-  wire [4*width-1:0] out;
+  reg[`width-1:0] a, b;
+  wire [4*`width-1:0] out;
+  // output declaration of module multiplier4_for
 
-  multiplier4_for #(
-                    .width 	(4  ))
-                  u_multiplier4_for(
+  multiplier4_for u_multiplier4_for(
                     .a   	(a    ),
                     .b   	(b    ),
                     .out 	(out  )
                   );
+
   initial
     fork
       a = 2;

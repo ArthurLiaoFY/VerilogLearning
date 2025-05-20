@@ -1,0 +1,51 @@
+$date
+	Tue May 20 22:09:29 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module adder16_test $end
+$var wire 16 ! sum [15:0] $end
+$var wire 1 " cout $end
+$var reg 16 # a [15:0] $end
+$var reg 16 $ b [15:0] $end
+$var reg 1 % cin $end
+$scope module u_adder0 $end
+$var wire 16 & a [15:0] $end
+$var wire 16 ' b [15:0] $end
+$var wire 1 % cin $end
+$var reg 1 " cout $end
+$var reg 16 ( sum [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10 (
+b1 '
+b1 &
+0%
+b1 $
+b1 #
+0"
+b10 !
+$end
+#10
+1"
+b0 !
+b0 (
+b1111111111111111 #
+b1111111111111111 &
+#20
+1%
+b101010101010101 $
+b101010101010101 '
+b1010101010101010 #
+b1010101010101010 &
+#30

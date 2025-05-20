@@ -1,3 +1,5 @@
+`include "alu1.v"
+
 module alu1_test;
   reg[1:0] sel;
   reg[3:0] a, b;

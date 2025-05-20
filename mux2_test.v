@@ -1,3 +1,5 @@
+`include "mux2.v"
+
 module mux2_test;
   reg[3:0] a, b;
   reg sel;

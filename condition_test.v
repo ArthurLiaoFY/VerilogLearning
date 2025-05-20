@@ -1,3 +1,5 @@
+
+`include "condition.v"
 module condition_test;
   reg [3:0] a, b;
   reg sel;

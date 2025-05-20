@@ -1,5 +1,5 @@
 $date
-	Mon May 19 17:21:25 2025
+	Tue May 20 22:16:47 2025
 $end
 $version
 	Icarus Verilog
@@ -9,70 +9,66 @@ $timescale
 $end
 $scope module multiplier4_for_test $end
 $var wire 16 ! out [15:0] $end
-$var parameter 32 " width $end
-$var reg 4 # a [3:0] $end
-$var reg 4 $ b [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
 $scope module u_multiplier4_for $end
-$var wire 4 % a [3:0] $end
-$var wire 4 & b [3:0] $end
-$var parameter 32 ' width $end
-$var reg 16 ( out [15:0] $end
-$var integer 32 ) i [31:0] $end
+$var wire 4 $ a [3:0] $end
+$var wire 4 % b [3:0] $end
+$var reg 16 & out [15:0] $end
+$var integer 32 ' i [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b100 '
-b100 "
 $end
 #0
 $dumpvars
-b100 )
-b10 (
-b1 &
-b10 %
-b1 $
-b10 #
+b100 '
+b10 &
+b1 %
+b10 $
+b1 #
+b10 "
 b10 !
 $end
 #1
-b100 )
+b100 '
 b110 !
-b110 (
+b110 &
+b11 "
+b11 $
+b10 #
+b10 %
+#2
+b100 '
+b1100 !
+b1100 &
+b100 "
+b100 $
 b11 #
 b11 %
-b10 $
-b10 &
-#2
-b100 )
-b1100 !
-b1100 (
+#3
+b100 '
+b10100 !
+b10100 &
+b101 "
+b101 $
 b100 #
 b100 %
-b11 $
-b11 &
-#3
-b100 )
-b10100 !
-b10100 (
+#4
+b100 '
+b11110 !
+b11110 &
+b110 "
+b110 $
 b101 #
 b101 %
-b100 $
-b100 &
-#4
-b100 )
-b11110 !
-b11110 (
-b110 #
-b110 %
-b101 $
-b101 &
 #5
-b100 )
+b100 '
 b110001 !
-b110001 (
+b110001 &
+b111 "
+b111 $
 b111 #
 b111 %
-b111 $
-b111 &

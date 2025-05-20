@@ -1,4 +1,5 @@
 `timescale 1ns/1ps
+`include "blocking.v"
 
 module blocking_test;
   reg clk, a;

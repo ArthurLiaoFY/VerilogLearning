@@ -1,3 +1,5 @@
+`include "count16.v"
+
 module count16_test;
   reg clk;
   reg reset;

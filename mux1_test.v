@@ -1,3 +1,5 @@
+`include "mux1.v"
+
 module mux1_test;// output declaration of module mux1
   reg[3:0] a;
   reg sel;

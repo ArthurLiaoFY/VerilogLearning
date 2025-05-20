@@ -1,3 +1,5 @@
+`include "latch2.v"
+
 module latch2_test;
   reg load;
   reg[1:0] a,b;

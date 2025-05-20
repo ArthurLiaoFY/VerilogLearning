@@ -1,3 +1,4 @@
+`include "non_blocking.v"
 `timescale 1ns/1ps
 
 module non_blocking_test;
