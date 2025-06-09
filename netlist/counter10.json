@@ -1,0 +1,286 @@
+{
+  "creator": "Yosys 0.48 (git sha1 aaa5347494801e9e3870b31387da59da24233f76, clang++ 18.1.2-wasi-sdk -O3)",
+  "modules": {
+    "counter10": {
+      "attributes": {
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "{workspace}/counter_10.v:1.1-29.10"
+      },
+      "ports": {
+        "rstn": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "cnt": {
+          "direction": "output",
+          "bits": [ 4, 5, 6, 7 ]
+        },
+        "cout": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+        "$add${workspace}/counter_10.v:22$4": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "{workspace}/counter_10.v:22.30-22.45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 5, 6, 7 ],
+            "B": [ "1" ],
+            "Y": [ 9, 10, 11, 12 ]
+          }
+        },
+        "$auto$proc_dff.cc:220:proc_dff$9": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$eq${workspace}/counter_10.v:16$3": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "{workspace}/counter_10.v:16.16-16.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 5, 6, 7 ],
+            "B": [ "1", "0", "0", "1" ],
+            "Y": [ 14 ]
+          }
+        },
+        "$eq${workspace}/counter_10.v:26$5": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "{workspace}/counter_10.v:26.19-26.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 5, 6, 7 ],
+            "B": [ "1", "0", "0", "1" ],
+            "Y": [ 8 ]
+          }
+        },
+        "$logic_not${workspace}/counter_10.v:12$2": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "{workspace}/counter_10.v:12.10-12.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$procdff$13": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "{workspace}/counter_10.v:10.3-24.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 3 ],
+            "D": [ 16, 17, 18, 19 ],
+            "Q": [ 4, 5, 6, 7 ]
+          }
+        },
+        "$procmux$7": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "{workspace}/counter_10.v:16.16-16.30|{workspace}/counter_10.v:16.12-23.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11, 12 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 14 ],
+            "Y": [ 16, 17, 18, 19 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\cnt_temp[3:0]": {
+          "hide_name": 1,
+          "bits": [ 16, 17, 18, 19 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:10.3-24.8"
+          }
+        },
+        "$add${workspace}/counter_10.v:22$4_Y": {
+          "hide_name": 1,
+          "bits": [ 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:22.30-22.45"
+          }
+        },
+        "$auto$rtlil.cc:2739:Not$10": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2743:ReduceOr$12": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$eq${workspace}/counter_10.v:16$3_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:16.16-16.30"
+          }
+        },
+        "$eq${workspace}/counter_10.v:26$5_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:26.19-26.33"
+          }
+        },
+        "$logic_not${workspace}/counter_10.v:12$2_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:12.10-12.16"
+          }
+        },
+        "$procmux$7_Y": {
+          "hide_name": 1,
+          "bits": [ 16, 17, 18, 19 ],
+          "attributes": {
+          }
+        },
+        "$procmux$8_CMP": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:3.9-3.12"
+          }
+        },
+        "cnt": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:4.15-4.18"
+          }
+        },
+        "cnt_temp": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:8.12-8.20"
+          }
+        },
+        "cout": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:5.10-5.14"
+          }
+        },
+        "rstn": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "{workspace}/counter_10.v:2.9-2.13"
+          }
+        }
+      }
+    }
+  }
+}
